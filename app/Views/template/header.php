@@ -21,23 +21,28 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="<?= base_url('landing') ?>">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Artikel</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="<?= base_url('about_us') ?>">About Us</a></li>
-            <li><a class="dropdown-item" href="#">Visi Misi</a></li>
           </ul>
         </li>
       </ul>
+      <?php 
+      $session = \Config\Services::session(); 
+      
+      if($session->nama != null){ ?>
+      <ul class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="<?=base_url('logout')?>">Logout</a>
+      </ul>
+      <?php }else{?>
       <ul class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="<?=base_url('login')?>">Login</a>
           <a class="nav-link active" aria-current="page" href="<?=  base_url('register'); ?>">Sign Up</a>
       </ul>
+      <?php }?>
     </div>
   </div>
 </nav>
