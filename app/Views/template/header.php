@@ -29,7 +29,7 @@
             Menu
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="<?= base_url('about_us') ?>">About Us</a></li>
             <li><a class="dropdown-item" href="#">Visi Misi</a></li>
           </ul>
         </li>
