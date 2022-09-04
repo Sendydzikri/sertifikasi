@@ -1,7 +1,7 @@
 <?= $this->include('template/header') ?>
 <body>
     <div class="container bg-success mt-3" style="border-radius:5px; padding:30px; width:30%;">
-        <img src="<?=base_url('image/unjani.png')?>" alt="UNJANI" height="100" width="100" class="rounded mx-auto d-block">
+        <img src="<?=base_url('image/unjanilogo.png')?>" alt="UNJANI" height="100" width="100" class="rounded mx-auto d-block">
         <h1 class="text-center text-white mt-4">Login Page</h1>
         
         <form action="<?= base_url('action_login')?>" method="post" >
