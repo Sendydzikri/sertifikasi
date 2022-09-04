@@ -1,4 +1,4 @@
-<footer class="text-center text-white mt-3 bg-success">
+<footer class="text-center text-white mt-3 bg-success footer">
 
   <!-- Copyright -->
   <div class="text-center text-dark p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
